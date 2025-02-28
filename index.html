@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استخراج الترجمة من الفيديو</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3f51b5;
+            --primary-dark: #303f9f;
+            --primary-light: #c5cae9;
+            --accent-color: #ff4081;
+            --success-color: #4caf50;
+            --warning-color: #ff9800;
+            --error-color: #f44336;
+            --text-color: #333;
+            --text-light: #757575;
+            --bg-color: #f5f5f5;
+            --card-color: #ffffff;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            direction: rtl;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .card {
+            background-color: var(--card-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 2px;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-light);
+            position: relative;
+            transition: var(--transition);
+            margin-left: 10px;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .tab i {
+            margin-left: 8px;
+            font-size: 1.1rem;
+        }
+
+        .tab:hover {
+            color: var(--primary-color);
+            background-color: rgba(197, 202, 233, 0.2);
+        }
+
+        .tab.active {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 3px 3px 0 0;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            transition: var(--transition);
+            background-color: #fff;
+        }
+
+        input:focus, select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.2);
+            outline: none;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 2px dashed #ddd;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        input[type="file"]:hover {
+            border-color: var(--primary-color);
+            background-color: #f0f2ff;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .file-input-button {
+            background-color: #f0f2ff;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-light);
+            padding: 12px 20px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .file-input-button:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+        }
+
+        .file-name {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            text-align: center;
+            display: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button i {
+            margin-left: 8px;
+        }
+
+        button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .language-info {
+            font-size: 0.9em;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        .progress-container {
+            margin: 30px 0;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .progress-bar-container {
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        #progress-bar {
+            height: 100%;
+            background-color: var(--primary-color);
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+        
+        .progress-percentage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .progress-status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-status i {
+            margin-left: 10px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            animation: pulse 1.5s infinite;
+        }
+
+        #error-container {
+            background-color: #ffebee;
+            color: var(--error-color);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            border: 1px solid #ffcdd2;
+            text-align: center;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        #error-container h3 {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #error-container h3 i {
+            margin-left: 8px;
+            color: var(--error-color);
+        }
+
+        #error-container button {
+            margin-top: 15px;
+            background-color: var(--error-color);
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #error-container button:hover {
+            background-color: #d32f2f;
+        }
+
+        .result-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+            margin-top: 30px;
+        }
+
+        .result-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .result-section h2 i {
+            margin-left: 10px;
+            color: var(--success-color);
+        }
+
+        .srt-preview {
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            max-height: 400px;
+            overflow-y: auto;
+            direction: ltr;
+            text-align: left;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .download-section {
+            text-align: center;
+        }
+
+        .download-btn {
+            background-color: var(--success-color);
+            margin-top: 15px;
+        }
+
+        .download-btn:hover {
+            background-color: #388e3c;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .tab {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>استخراج الترجمة من الفيديو</h1>
+        <div class="subtitle">أداة متطورة لاستخراج النصوص من مقاطع الفيديو بدقة عالية</div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="tabs">
+                <div class="tab active" data-tab="file-upload"><i class="fas fa-file-video"></i> رفع ملف فيديو</div>
+                <div class="tab" data-tab="youtube-link"><i class="fab fa-youtube"></i> رابط يوتيوب</div>
+            </div>
+            
+            <div class="tab-content active" id="file-upload">
+                <form id="upload-form">
+                    <div class="form-group">
+                        <label for="video-file">اختر ملف فيديو:</label>
+                        <div class="file-input-wrapper">
+                            <label class="file-input-button" for="video-file">
+                                <i class="fas fa-cloud-upload-alt"></i> اختر ملف فيديو
+                            </label>
+                            <input type="file" id="video-file" name="video" accept="video/*" required style="display: none;">
+                        </div>
+                        <div id="file-name" class="file-name">لم يتم اختيار ملف</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="language-select-file">اختر اللغة:</label>
+                        <select id="language-select-file" name="language" required>
+                            <option value="ar">العربية</option>
+                            <option value="en">الإنجليزية</option>
+                            <option value="tr">التركية</option>
+                            <option value="fr">الفرنسية</option>
+                            <option value="es">الإسبانية</option>
+                            <option value="de">الألمانية</option>
+                        </select>
+                        <div class="language-info">اللغة التي يتحدث بها في الفيديو</div>
+                    </div>
+                    
+                    <button type="submit"><i class="fas fa-closed-captioning"></i> استخراج الترجمة</button>
+                </form>
+            </div>
+            
+            <div class="tab-content" id="youtube-link">
+                <form id="youtube-form">
+                    <div class="form-group">
+                        <label for="youtube-url">أدخل رابط فيديو يوتيوب:</label>
+                        <input type="url" id="youtube-url" name="youtube_url" placeholder="https://www.youtube.com/watch?v=..." required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="language-select-youtube">اختر اللغة:</label>
+                        <select id="language-select-youtube" name="language" required>
+                            <option value="ar">العربية</option>
+                            <option value="en">الإنجليزية</option>
+                            <option value="tr">التركية</option>
+                            <option value="fr">الفرنسية</option>
+                            <option value="es">الإسبانية</option>
+                            <option value="de">الألمانية</option>
+                        </select>
+                        <div class="language-info">اللغة التي يتحدث بها في الفيديو</div>
+                    </div>
+                    
+                    <button type="submit"><i class="fab fa-youtube"></i> استخراج الترجمة</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="progress-container" class="card progress-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+                <div class="progress-percentage">0%</div>
+            </div>
+            <div class="progress-status">
+                <p id="progress-info">جاري المعالجة...</p>
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+        </div>
+        
+        <div id="error-container" class="card">
+            <h3><i class="fas fa-exclamation-triangle"></i> خطأ</h3>
+            <p id="error-message">حدث خطأ أثناء المعالجة</p>
+            <button onclick="location.reload()"><i class="fas fa-redo"></i> إعادة المحاولة</button>
+        </div>
+        
+        <div class="result-section" id="result-container" style="display: none;">
+            <h2><i class="fas fa-closed-captioning"></i> معاينة الترجمة</h2>
+            <div class="srt-preview" dir="ltr"></div>
+
+            <div class="download-section">
+                <button id="download-btn" class="btn primary-btn">
+                    <i class="fas fa-download"></i> تنزيل ملف الترجمة (SRT)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        2025 استخراج الترجمة من الفيديو - جميع الحقوق محفوظة
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

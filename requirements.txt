@@ -1,0 +1,12 @@
+flask==2.0.1
+pysrt==1.1.2
+pytube==15.0.0
+moviepy==1.0.3
+pydub==0.25.1
+webrtcvad==2.0.10
+numpy==1.22.0
+yt-dlp==2025.2.19
+openai-whisper==20231117
+ffmpeg-python==0.2.0
+torch==2.0.1
+tqdm==4.66.1

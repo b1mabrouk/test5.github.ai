@@ -1,0 +1,230 @@
+2025-02-28 15:31:31,959 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-28 15:31:32,960 - werkzeug - WARNING -  * Debugger is active!
+2025-02-28 15:31:32,991 - werkzeug - INFO -  * Debugger PIN: 701-972-805
+2025-02-28 15:31:33,143 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-02-28 15:31:33,144 - werkzeug - INFO -  * Running on http://192.168.8.125:8080/ (Press CTRL+C to quit)
+2025-02-28 15:31:47,846 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:31:47] "[36mGET / HTTP/1.1[0m" 304 -
+2025-02-28 15:31:47,958 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:31:47] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-02-28 15:31:48,004 - __main__ - DEBUG - Received setup_info request
+2025-02-28 15:31:48,006 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:31:48] "GET /setup_info HTTP/1.1" 200 -
+2025-02-28 15:31:48,347 - __main__ - DEBUG - Received setup_info request
+2025-02-28 15:31:48,348 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:31:48] "GET /setup_info HTTP/1.1" 200 -
+2025-02-28 15:31:57,229 - __main__ - DEBUG - Received video upload request
+2025-02-28 15:31:57,229 - __main__ - DEBUG - Request content type: multipart/form-data; boundary=----WebKitFormBoundary99r48lA9euDMNY5p
+2025-02-28 15:31:57,335 - werkzeug - INFO -  * Detected change in 'C:\\Python313\\Lib\\logging\\__init__.py', reloading
+2025-02-28 15:31:57,565 - __main__ - DEBUG - Request form: ImmutableMultiDict([('language', 'tr')])
+2025-02-28 15:31:57,567 - __main__ - WARNING - No file part in request
+2025-02-28 15:31:57,566 - werkzeug - INFO -  * Detected change in 'C:\\Python313\\Lib\\encodings\\cp1252.py', reloading
+2025-02-28 15:31:57,568 - werkzeug - INFO -  * Detected change in 'C:\\Users\\f1mab\\AppData\\Roaming\\Python\\Python313\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-02-28 15:31:57,569 - werkzeug - INFO -  * Detected change in 'C:\\Users\\f1mab\\AppData\\Roaming\\Python\\Python313\\site-packages\\werkzeug\\serving.py', reloading
+2025-02-28 15:31:57,571 - werkzeug - INFO -  * Detected change in 'C:\\Python313\\Lib\\http\\server.py', reloading
+2025-02-28 15:31:57,571 - werkzeug - INFO -  * Detected change in 'C:\\Python313\\Lib\\socketserver.py', reloading
+2025-02-28 15:31:57,570 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:31:57] "[31m[1mPOST /process HTTP/1.1[0m" 400 -
+2025-02-28 15:31:57,572 - werkzeug - INFO -  * Detected change in 'C:\\Python313\\Lib\\threading.py', reloading
+2025-02-28 15:31:57,954 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-28 15:31:59,366 - werkzeug - WARNING -  * Debugger is active!
+2025-02-28 15:31:59,410 - werkzeug - INFO -  * Debugger PIN: 701-972-805
+2025-02-28 15:31:59,540 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-02-28 15:31:59,541 - werkzeug - INFO -  * Running on http://192.168.8.125:8080/ (Press CTRL+C to quit)
+2025-02-28 15:35:15,475 - __main__ - DEBUG - Received YouTube processing request
+2025-02-28 15:35:15,475 - __main__ - DEBUG - Request content type: application/json
+2025-02-28 15:35:15,478 - __main__ - DEBUG - Request data: b'{"youtube_url":"https://www.youtube.com/watch?v=1rK4R3qkQ1o&ab_channel=EchoroukNews","language":"ar"}'
+2025-02-28 15:35:15,479 - __main__ - DEBUG - Parsed JSON data: {'youtube_url': 'https://www.youtube.com/watch?v=1rK4R3qkQ1o&ab_channel=EchoroukNews', 'language': 'ar'}
+2025-02-28 15:35:15,481 - __main__ - DEBUG - Processing YouTube URL: https://www.youtube.com/watch?v=1rK4R3qkQ1o&ab_channel=EchoroukNews, Language: ar
+2025-02-28 15:35:15,483 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:35:15] "POST /process_youtube HTTP/1.1" 200 -
+2025-02-28 15:35:40,055 - werkzeug - INFO -  * Detected change in 'C:\\Users\\f1mab\\Desktop\\vvvvv\\debug_app.py', reloading
+2025-02-28 15:35:40,056 - werkzeug - INFO -  * Detected change in 'C:\\Users\\f1mab\\Desktop\\vvvvv\\debug_app.py', reloading
+2025-02-28 15:37:07,962 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-28 15:37:09,283 - werkzeug - WARNING -  * Debugger is active!
+2025-02-28 15:37:09,312 - werkzeug - INFO -  * Debugger PIN: 701-972-805
+2025-02-28 15:37:09,428 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-02-28 15:37:09,429 - werkzeug - INFO -  * Running on http://192.168.8.125:8080/ (Press CTRL+C to quit)
+2025-02-28 15:37:25,264 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:25] "[36mGET / HTTP/1.1[0m" 304 -
+2025-02-28 15:37:25,316 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:25] "GET /script.js HTTP/1.1" 200 -
+2025-02-28 15:37:25,417 - __main__ - DEBUG - Received setup_info request
+2025-02-28 15:37:25,420 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:25] "GET /setup_info HTTP/1.1" 200 -
+2025-02-28 15:37:25,730 - __main__ - DEBUG - Received setup_info request
+2025-02-28 15:37:25,731 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:25] "GET /setup_info HTTP/1.1" 200 -
+2025-02-28 15:37:32,833 - __main__ - DEBUG - Received video upload request
+2025-02-28 15:37:32,833 - __main__ - DEBUG - Request content type: multipart/form-data; boundary=----WebKitFormBoundary4e0mm2xM6upmACrg
+2025-02-28 15:37:33,246 - __main__ - DEBUG - Request form: ImmutableMultiDict([('language', 'tr')])
+2025-02-28 15:37:33,246 - __main__ - DEBUG - Processing video with language: tr
+2025-02-28 15:37:33,249 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:33] "POST /process HTTP/1.1" 200 -
+2025-02-28 15:37:35,262 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:35,263 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:35] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:37,570 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:37,571 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:37] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:39,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:39,261 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:39] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:41,705 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:41,706 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:41] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:43,261 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:43,262 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:43] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:45,565 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:45,565 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:45] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:47,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:47,261 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:47] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:49,570 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:49,571 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:49] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:51,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:51,261 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:51] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:53,564 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:53,565 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:53] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:55,262 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:55,262 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:55] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:57,565 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:57,569 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:57] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:37:59,261 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:37:59,261 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:37:59] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:01,684 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:01,686 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:01] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:03,262 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:03,263 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:03] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:05,562 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:05,563 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:05] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:07,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:07,260 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:07] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:09,565 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:09,566 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:09] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:11,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:11,261 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:11] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:13,563 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:13,563 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:13] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:15,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:15,261 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:15] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:17,564 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:17,565 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:17] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:19,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:19,260 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:19] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:21,704 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:21,705 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:21] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:23,261 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:23,262 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:23] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:25,562 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:25,563 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:25] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:27,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:27,260 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:27] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:29,809 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:29,809 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:29] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:31,359 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:31,360 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:31] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:33,563 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:33,564 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:33] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:35,259 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:35,260 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:35] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:37,566 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:37,566 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:37] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:39,262 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:39,263 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:39] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:41,775 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:41,776 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:41] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:43,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:43,261 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:43] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:45,562 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:45,562 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:45] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:47,261 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:47,262 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:47] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:49,595 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:49,596 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:49] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:51,317 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:51,317 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:51] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:53,567 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:53,569 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:53] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:55,260 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:55,260 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:55] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:57,689 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:57,689 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:57] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:38:59,264 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:38:59,265 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:38:59] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:01,564 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:01,565 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:01] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:03,265 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:03,266 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:03] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:05,562 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:05,563 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:05] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:08,148 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:08,148 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:08] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:10,415 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:10,416 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:10] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:12,106 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:12,107 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:12] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:14,616 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:14,616 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:14] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:16,109 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:16,110 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:16] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:18,409 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:18,410 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:18] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:20,117 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:20,119 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:20] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:22,639 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:22,640 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:22] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:24,149 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:24,150 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:24] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:26,649 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:26,650 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:26] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:28,123 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:28,124 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:28] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:30,455 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:30,456 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:30] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:32,106 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:32,107 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:32] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:34,413 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:34,413 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:34] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:36,108 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:36,108 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:36] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:38,412 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:38,413 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:38] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:40,109 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:40,111 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:40] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:42,409 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:42,410 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:42] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:44,107 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:44,108 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:44] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:46,410 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:46,411 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:46] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:48,107 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:48,108 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:48] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:50,494 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:50,495 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:50] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:52,105 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:52,106 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:52] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:54,409 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:54,410 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:54] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:56,144 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:56,144 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:56] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:39:58,410 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:39:58,411 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:39:58] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:40:00,107 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:40:00,108 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:40:00] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:40:02,409 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:40:02,411 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:40:02] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:40:04,108 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:40:04,108 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:40:04] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:40:06,412 - __main__ - DEBUG - Progress check for task: 25d45dda-2867-48f6-81ef-5c0ff2b2569b
+2025-02-28 15:40:06,413 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:40:06] "GET /progress/25d45dda-2867-48f6-81ef-5c0ff2b2569b HTTP/1.1" 200 -
+2025-02-28 15:40:33,424 - werkzeug - INFO -  * Detected change in 'C:\\Users\\f1mab\\Desktop\\vvvvv\\debug_app.py', reloading
+2025-02-28 15:40:33,425 - werkzeug - INFO -  * Detected change in 'C:\\Users\\f1mab\\Desktop\\vvvvv\\debug_app.py', reloading
+2025-02-28 15:41:39,323 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-28 15:41:40,534 - werkzeug - WARNING -  * Debugger is active!
+2025-02-28 15:41:40,557 - werkzeug - INFO -  * Debugger PIN: 701-972-805
+2025-02-28 15:41:40,673 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-02-28 15:41:40,674 - werkzeug - INFO -  * Running on http://192.168.8.125:8080/ (Press CTRL+C to quit)
+2025-02-28 15:42:19,560 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:42:19] "[36mGET / HTTP/1.1[0m" 304 -
+2025-02-28 15:42:19,648 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:42:19] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-02-28 15:42:19,739 - __main__ - DEBUG - Received setup_info request
+2025-02-28 15:42:19,742 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:42:19] "GET /setup_info HTTP/1.1" 200 -
+2025-02-28 15:42:20,062 - __main__ - DEBUG - Received setup_info request
+2025-02-28 15:42:20,063 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:42:20] "GET /setup_info HTTP/1.1" 200 -
+2025-02-28 15:42:27,724 - __main__ - DEBUG - Received video upload request
+2025-02-28 15:42:27,724 - __main__ - DEBUG - Request content type: multipart/form-data; boundary=----WebKitFormBoundaryhWIAvo6crs31Ikk5
+2025-02-28 15:42:27,797 - __main__ - DEBUG - Request form: ImmutableMultiDict([('language', 'tr')])
+2025-02-28 15:42:27,797 - __main__ - DEBUG - Processing video with language: tr
+2025-02-28 15:42:27,800 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:42:27] "POST /process HTTP/1.1" 200 -
+2025-02-28 15:42:29,812 - __main__ - DEBUG - Progress check for task: 0a8bd5a8-1f8f-4968-a6e8-8cc4fccd027a
+2025-02-28 15:42:29,813 - werkzeug - INFO - 127.0.0.1 - - [28/Feb/2025 15:42:29] "GET /progress/0a8bd5a8-1f8f-4968-a6e8-8cc4fccd027a HTTP/1.1" 200 -
+2025-02-28 15:45:25,159 - werkzeug - INFO -  * Detected change in 'C:\\Users\\f1mab\\Desktop\\vvvvv\\debug_app.py', reloading
+2025-02-28 15:45:25,160 - werkzeug - INFO -  * Detected change in 'C:\\Users\\f1mab\\Desktop\\vvvvv\\debug_app.py', reloading
